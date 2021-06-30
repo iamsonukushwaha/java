@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 class Arraylist {
     public static void main(String[] args) {
+        
         // create an ArrayList
         ArrayList<String> languages = new ArrayList<>();
 
@@ -51,6 +52,28 @@ class Arraylist {
         for(int number : numbers) {
             System.out.println(number);
         }
+
+        // create ArrayList of double type
+        double sum = 0.0, average;
+        ArrayList<Double> dblNumbers = new ArrayList<>();
+
+        // add elements to ArrayList
+        dblNumbers.add(5.6);
+        dblNumbers.add(-6.6);
+        dblNumbers.add(10.0);
+        dblNumbers.add(12.5);
+
+        // number of elements
+        int length = dblNumbers.size();
+
+        // sum of elements
+        for(double dblnumber: dblNumbers) {
+            sum += dblnumber;
+        }
+
+        // compute average
+        average = sum/length;
+        System.out.println("Average : " + average);
         
 
     }
