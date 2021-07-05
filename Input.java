@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class Input {
     public static void main(String[] args) {
         int n;
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter an integer:");
-        n = sc.nextInt();
+        n = input.nextInt();
+        input.close();
         System.out.println("Entered integer is " + n);
 
     }

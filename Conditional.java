@@ -6,6 +6,7 @@ public class Conditional {
         int x;
         System.out.print("Enter an integer : ");
         x = input.nextInt();
+        input.close();
         // this syntax also runs
         // System.out.printf("%d is an %s \n", x, (x%2 == 0) ? "Even Number" : "Odd Number");  
 

@@ -1,13 +1,14 @@
 import java.util.Scanner;
 public class TryCatch {
     public static void main(String[] args) {
-        int numerator, denominator;
+        double numerator, denominator;
         double result;
         // take inputs
         System.out.println("Enter numerator and denominator :");
         Scanner input = new Scanner(System.in);
-        numerator = input.nextInt();
-        denominator = input.nextInt();
+        numerator = input.nextDouble();
+        denominator = input.nextDouble();
+        input.close();
         // code that may generate exceptions
         try {
             result = numerator/denominator;

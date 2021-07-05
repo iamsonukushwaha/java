@@ -1,6 +1,6 @@
 public class RelationalOperators {
     public static void main(String args[]) {
-        int i = 20, j = 10, result;
+        int i = 20, j = 10;
         System.out.println("Result: if i = 20 and j = 10");
         
         

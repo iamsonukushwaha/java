@@ -1,24 +1,28 @@
-class Animal {
+class Animals {
     // constructor
-    Animal(String type) {
+    Animals(String type) {
         System.out.println("Type : " + type);
     }
     
 }
 
-class Dog extends Animal {
+class Dogs extends Animals {
     // constructor
-    Dog() {
+    Dogs() {
         // calls the constructor of Animal
 
         super("Mammal");
         System.out.println("I am a Dog");
 
     }
+    void eat() {
+        System.out.println("I like eating");
+    }
 }
 
-public class Animals {
+public class Inherit {
     public static void main(String args[]) {
-        Dog dog1 = new Dog();
+        Dogs dog1 = new Dogs();
+        dog1.eat();
     }
 }
